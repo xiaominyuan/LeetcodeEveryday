@@ -11,10 +11,17 @@ public class Trys {
 //        System.out.println(a.get(b++));
 //        System.out.println(b);
 
-        int[] a = new int[]{1,2,3,4,5};
-        for (int i =0; i<a.length;i++){
-            System.out.println(a[i]);
+        List<Integer> list = new ArrayList<>();
+        for (int i =0; i<5;i++){
+            list.add(i);
         }
+
+        List<ArrayList<Integer>> list2 = new ArrayList<>();
+        list2.add(new ArrayList<>(list));
+
+        System.out.println(list);
+        System.out.println("-------");
+        System.out.println(list2);
 
     }
 }
