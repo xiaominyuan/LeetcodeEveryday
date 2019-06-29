@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 public class Trys {
@@ -23,8 +24,32 @@ public class Trys {
 ////        System.out.println("-------");
 ////        System.out.println(list2);
 
-        int[] a = new int[]{1,2,3};
-        System.out.println(a[a.length-1]);
+//        int[] a = new int[]{1,2,3};
+//
+//        System.out.println(a[a.length-1]);
+
+        String num = "12345";
+        char[] arr = num.toCharArray();
+        ArrayList<Integer> list = new ArrayList<>();
+
+        for (char a : arr){
+            list.add(Integer.parseInt(String.valueOf(a)));
+        }
+
+        for (int b : list){
+            if (b >3){
+                System.out.println(b);
+            }
+
+        }
+
+        String ss = "";
+        for (int b : list){
+            ss = ss + b;
+//            System.out.println(ss);
+        }
+
+        System.out.println(ss);
 
     }
 }
