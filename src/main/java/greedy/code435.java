@@ -34,9 +34,22 @@ public class code435 {
 
         int result = 1;
 
-        Comparator cmt = new myComparator();
+//        Comparator cmt = new myComparator();
 
-        Arrays.sort(intervals,cmt);
+//        Arrays.sort(intervals,cmt);
+
+        Arrays.sort(intervals, new Comparator<int[]>() {
+            @Override
+            public int compare(int[] o1, int[] o2) {
+                if (o1[1]<o2[1]){
+                    return -1;
+                }else if(o1[1]>o2[1]){
+                    return 1;
+                }else{
+                    return 0;
+                }
+            }
+        });
 
         int minEnd = intervals[0][1];
 
@@ -52,15 +65,15 @@ public class code435 {
     }
 }
 
-class myComparator implements Comparator<int[]> {
-    @Override
-    public int compare(int[] arr1, int[] arr2){
-        if (arr1[1]<arr2[1]){
-            return -1;
-        }else if(arr1[1]>arr2[1]){
-            return 1;
-        }else{
-            return 0;
-        }
-    }
-}
+//class myComparator implements Comparator<int[]> {
+//    @Override
+//    public int compare(int[] arr1, int[] arr2){
+//        if (arr1[1]<arr2[1]){
+//            return -1;
+//        }else if(arr1[1]>arr2[1]){
+//            return 1;
+//        }else{
+//            return 0;
+//        }
+//    }
+//}
