@@ -28,28 +28,31 @@ public class Trys {
 //
 //        System.out.println(a[a.length-1]);
 
-        String num = "12345";
-        char[] arr = num.toCharArray();
-        ArrayList<Integer> list = new ArrayList<>();
+//        String num = "12345";
+//        char[] arr = num.toCharArray();
+//        ArrayList<Integer> list = new ArrayList<>();
+//
+//        for (char a : arr){
+//            list.add(Integer.parseInt(String.valueOf(a)));
+//        }
+//
+//        for (int b : list){
+//            if (b >3){
+//                System.out.println(b);
+//            }
+//
+//        }
+//
+//        String ss = "";
+//        for (int b : list){
+//            ss = ss + b;
+////            System.out.println(ss);
+//        }
+//
+//        System.out.println(ss);
 
-        for (char a : arr){
-            list.add(Integer.parseInt(String.valueOf(a)));
-        }
-
-        for (int b : list){
-            if (b >3){
-                System.out.println(b);
-            }
-
-        }
-
-        String ss = "";
-        for (int b : list){
-            ss = ss + b;
-//            System.out.println(ss);
-        }
-
-        System.out.println(ss);
+        System.out.println('b'-'a');
+        System.out.println((char) (2+'a'));
 
     }
 }

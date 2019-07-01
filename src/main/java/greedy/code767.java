@@ -17,7 +17,12 @@
 //        链接：https://leetcode-cn.com/problems/reorganize-string
 //        著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
 
-//未解决
+
+//思路
+//首先用一个数组（长度26）维护每个字母对应的出现次数
+//然后把这个数组的每个元素放到最大堆中，为了使后续轮流把前两个不同的字母交替放入stringbuilder
+//而且放入一次之后，还可以继续把这两个字母用同样的顺序放入最大堆中，同时字母出现的次数都减小1
+//堆的作用：在这里堆是维护两个不同字母的相对顺序，交替地插入到stringbuilder中.
 
 package greedy;
 
@@ -25,89 +30,73 @@ import java.util.Comparator;
 import java.util.PriorityQueue;
 
 public class code767 {
-    /**
-     * 写一个NewChar类，里面包含字母的出现频数，和字母本身。用优先队列PriorityQueue来存储一个一个的NewChar，
-     * 并自己写一个比较器，通过字母的频数降序排列，即构建一个大顶堆。之后两两输出，输出前两个大的，
-     * 然后将它们两个对应的count频率-1，再次放入，继续输出……
-     *
-     * 这样输出是为了总能有一个字母可以把频率最多的字母隔开，优先队列是为了维持储存NewChar的集合总是可以降序输出。
-     *
-     * @param S 定一个字符串S
-     * @return 若可行，输出任意可行的结果。若不可行，返回空字符串。
-     */
     public String reorganizeString(String S) {
-        //整理好各个字母对应出现的频率
-        int[] counts = new int[26];
-        for (int i = 0; i < S.length(); i++) {
-            counts[S.charAt(i) - 'a']++;
-        }
-        //定义大顶堆规则
-        PriorityQueue<NewChar> pq = new PriorityQueue<>(26, new Comparator<NewChar>() {
-            //重写比较规则 （后面对象 - 前面对象）为大顶堆
+        int[] arr = new int[26];
 
-            /**
-             * 拿过来api说
-             * @param o1 the first object to be compared.
-             * @param o2 the second object to be compared.
-             * @return a negative integer, zero, or a positive integer as the
-             *         first argument is less than, equal to, or greater than the
-             *         second.
-             */
+        PriorityQueue<onePrio> pq = new PriorityQueue<>(26, new Comparator<onePrio>(){
             @Override
-            public int compare(NewChar o1, NewChar o2) {
-                //基于出现频率的比较
-                //默认是小顶堆，重写为大顶堆
-                return o2.count - o1.count;
+            public int compare(onePrio p1, onePrio p2){
+                return p2.count - p1.count;
             }
         });
-        //构建大顶堆
-        for (int i = 0; i < 26; i++) {
-            //判断重构是否可行，counts[i] <= (S.length() + 1) / 2)---某个字母过半就不能重构
-            if (counts[i] > 0 && counts[i] <= (S.length() + 1) / 2) {
-                //可以重构，就往大顶堆里面塞对象
-                pq.add(new NewChar(counts[i], (char) (i + 'a')));
-            } else if (counts[i] > (S.length() + 1) / 2) {
+
+        for (int i = 0; i<S.length(); i++){
+            arr[S.charAt(i)-'a']++;
+        }
+
+        for (int i = 0; i<26; i++){
+            if (arr[i]>0 && arr[i] <= (S.length()+1)/2 ){
+                pq.add(new onePrio(arr[i], (char) (i+'a')));
+            }else if (arr[i]> (S.length()+1)/2){
                 return "";
             }
         }
-        //由大顶堆重构字符串
-        StringBuilder str = new StringBuilder();
 
-        while (pq.size() > 1) {//最后剩下一个字符或者一个不剩，终止
-            //拿出来频率老大和老二
-            NewChar c1 = pq.poll();
-            NewChar c2 = pq.poll();
 
-            str.append(c1.letter);
-            str.append(c2.letter);
+        StringBuilder sb = new StringBuilder();
 
-            if (--c1.count > 0) pq.add(c1);
-            if (--c2.count > 0) pq.add(c2);
+        while (pq.size()>1){
+            onePrio p1 = pq.poll();
+            onePrio p2 = pq.poll();
+
+            sb.append(p1.letter);
+            sb.append(p2.letter);
+
+            p1.count = p1.count-1;
+            p2.count = p2.count-1;
+
+
+            if (p1.count>0){
+
+                // p1 = new onePrio(p1.count-1,p1.letter);
+                pq.add(p1);
+                // p1.count = p1.count-1;
+            }
+
+            if (p2.count>0){
+                // p2 = new onePrio(p2.count-1, p2.letter);
+                pq.add(p2);
+                // p2.count = p2.count-1;
+            }
         }
-        //若剩下一个，特殊处理；一个不剩正好，美滋滋
-        if (pq.size() > 0)
-            str.append(pq.poll().letter);
 
-        return str.toString();
+        if (pq.size()>0){
+            onePrio p = pq.poll();
+            sb.append(p.letter);
+        }
+
+        return sb.toString();
+
+
+
     }
 
-    /**
-     * 自己根据数据特点搞个对象
-     */
-    static class NewChar {
-        int count;//出现的频率
-        char letter;//字母
-
-        NewChar(int count, char letter) {
+    static class onePrio{
+        int count;
+        char letter;
+        public onePrio(int count, char letter){
             this.count = count;
             this.letter = letter;
         }
     }
-
-    /**
-     * 创建PriorityQueue的时候一定要写一个比较器Comparator，因为NewChar是自己写的一个类，
-     * 不写比较器的话程序自己不知道该如何排序，从而会报错：
-     *
-     * cannot be cast to java.lang.Comparable 	at java.util.PriorityQueue.siftUpCom
-     */
 }
