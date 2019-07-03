@@ -51,8 +51,16 @@ public class Trys {
 //
 //        System.out.println(ss);
 
-        System.out.println('b'-'a');
-        System.out.println((char) (2+'a'));
+//        System.out.println('b'-'a');
+//        System.out.println((char) (2+'a'));
+
+        int[][] a = new int[][]{{1,2},{2,3},{5,9}};
+//        int[] b = new ArrayList(a[0]);
+//        for (int c : a[0]){
+//            System.out.println(c);
+//        }
+
+        System.out.println(a[2][0]);
 
     }
 }
