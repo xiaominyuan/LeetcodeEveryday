@@ -47,6 +47,7 @@ public class code46 {
         if (n == start){
             //Java 中的对象是引用传递，直接 output.add(nums)只是把nums的引用拷贝了一份，
             // 更改nums的时候就会影响到output中的每一份nums的引用。用拷贝构造函数就能进行值传递，把整个nums拷贝了一份，后面再修改就不会受影响。
+            //List为可变对象
             result.add(new ArrayList(tmp));
         }
 
