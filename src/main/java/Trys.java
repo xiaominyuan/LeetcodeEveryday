@@ -62,10 +62,11 @@ public class Trys {
 //
 //        System.out.println(a[2][0]);
 
-        List<Integer> tmp = new ArrayList<>();
-        tmp.add(1);
-        tmp.add(2);
-        tmp.add(3);
+//        List<Integer> tmp = new ArrayList<>();
+//        tmp.add(1);
+//        tmp.add(2);
+//        tmp.add(3);
+        System.out.println(String.valueOf(3).toCharArray());
 
 
     }
