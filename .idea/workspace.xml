@@ -44,9 +44,10 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/DP/code139.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="378">
-              <caret line="14" column="11" selection-start-line="14" selection-start-column="11" selection-end-line="14" selection-end-column="11" />
+            <state relative-caret-position="337">
+              <caret line="15" column="22" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="22" />
               <folding>
+                <element signature="e#0#1043#0" expanded="true" />
                 <element signature="imports" expanded="true" />
               </folding>
             </state>
@@ -286,7 +287,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1563810915928" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1563811269194" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -365,12 +366,12 @@
       <workItem from="1563117289620" duration="614000" />
       <workItem from="1563203815362" duration="1564000" />
       <workItem from="1563372993899" duration="1244000" />
-      <workItem from="1563808111650" duration="1177000" />
+      <workItem from="1563808111650" duration="1778000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="61681000" />
+    <option name="totallyTimeSpent" value="62282000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1334" y="92" width="1180" height="930" extended-state="0" />
@@ -803,9 +804,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/DP/code139.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="14" column="11" selection-start-line="14" selection-start-column="11" selection-end-line="14" selection-end-column="11" />
+        <state relative-caret-position="337">
+          <caret line="15" column="22" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="22" />
           <folding>
+            <element signature="e#0#1043#0" expanded="true" />
             <element signature="imports" expanded="true" />
           </folding>
         </state>
