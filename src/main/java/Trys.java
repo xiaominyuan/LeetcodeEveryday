@@ -66,8 +66,12 @@ public class Trys {
 //        tmp.add(1);
 //        tmp.add(2);
 //        tmp.add(3);
-        System.out.println(String.valueOf(3).toCharArray());
+//        System.out.println(String.valueOf(3).toCharArray());
 
+        boolean[] a = new boolean[1];
+        for (boolean b : a){
+            System.out.println(b);
+        }
 
     }
 }
