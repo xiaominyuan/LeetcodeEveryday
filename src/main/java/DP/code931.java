@@ -35,10 +35,12 @@ public class code931 {
             //第一列
             dp[i][0] = Math.min(dp[i-1][0], dp[i-1][1]) + A[i][0];
 
+            //中间的列
             for (int j = 1; j< len-1; j++){
                 dp[i][j] = Math.min(Math.min(dp[i-1][j-1], dp[i-1][j]), dp[i-1][j+1]) + A[i][j];
             }
 
+            //最后一列
             dp[i][len-1] = Math.min(dp[i-1][len-1], dp[i-1][len-2]) + A[i][len-1];
 
         }
