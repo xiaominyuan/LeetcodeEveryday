@@ -58,7 +58,7 @@ public class code945 {
         int right = high;
 
         while (left <= right){
-            while (left < right && nums[left]>=tmp){
+            while (left < right && nums[left]<=tmp){
                 left++;
             }
             while (nums[right]>tmp){
