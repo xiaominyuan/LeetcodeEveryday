@@ -31,6 +31,7 @@ import java.util.List;
 //K个数之和，模板
 public class code18 {
     public List<List<Integer>> fourSum(int[] nums, int target) {
+        //先排序
         Arrays.sort(nums);
 
         int[] stack = new int[4];
