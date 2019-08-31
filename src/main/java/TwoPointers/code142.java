@@ -28,6 +28,10 @@ package TwoPointers;
 
 import LinkedList.ListNode;
 
+import java.util.HashSet;
+import java.util.List;
+import java.util.Set;
+
 
 public class code142 {
     public ListNode detectCycle(ListNode head) {
@@ -68,4 +72,23 @@ public class code142 {
 
         return null;
     }
+
+
+    //哈希表法
+    public ListNode detectCycle2(ListNode head) {
+        Set<ListNode> set = new HashSet<>();
+
+        while (head != null){
+            if (set.contains(head)){
+                return head;
+            }else{
+                set.add(head);
+            }
+
+            head = head.next;
+        }
+
+        return null;
+    }
+
 }
