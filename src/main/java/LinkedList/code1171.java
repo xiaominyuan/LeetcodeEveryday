@@ -31,8 +31,12 @@
 
 package LinkedList;
 
+import java.util.HashMap;
+import java.util.Map;
+
 public class code1171 {
 
+    //暴力遍历
     public ListNode removeZeroSumSublists(ListNode head) {
         if (head == null){
             return head;
@@ -71,6 +75,46 @@ public class code1171 {
             }
         }
 
+        return head;
+    }
+
+
+    //用map 存储第一个节点到当前节点的全部和sum
+    public ListNode removeZeroSumSublists2(ListNode head) {
+        if (head == null){
+            return head;
+        }
+
+        ListNode cur = head;
+        int sum = 0;
+        Map<Integer, ListNode> map = new HashMap<>();
+
+
+        while (cur != null){
+            sum = sum + cur.val;
+
+            if (sum == 0){
+                //直接删除
+                head = cur.next;
+                //移动cur 指针，继续后边的寻找
+                cur = head;
+            }else{
+
+                if (map.containsKey(sum)){
+                    //关键点：如果map 中出现两个相同的前序和，
+                    //说明这两个节点之间的 sum 一定为 0
+                    map.get(sum).next = cur.next;
+                    cur = head;
+                    map.clear();
+                    sum = 0;
+                }else{
+
+                    //如果map 中不存在，就继续存储前序和
+                    map.put(sum, cur);
+                    cur = cur.next;
+                }
+            }
+        }
         return head;
     }
 }
