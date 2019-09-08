@@ -71,6 +71,7 @@ public class code347 {
             }
         }
 
+        //大顶堆，根节点最大
         PriorityQueue<Integer> queue = new PriorityQueue<>(new Comparator<Integer>(){
 
             @Override
