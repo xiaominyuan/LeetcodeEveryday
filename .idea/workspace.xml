@@ -13,15 +13,6 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/LinkedList/code82.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="297">
-              <caret line="11" column="2" selection-start-line="11" selection-start-column="2" selection-end-line="11" selection-end-column="2" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Arrays/code347.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="162">
@@ -39,11 +30,24 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/BinarySearch/code50.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="432">
-              <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+            <state relative-caret-position="243">
+              <caret line="13" column="17" lean-forward="true" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/BinarySearch/code658.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret lean-forward="true" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#523#532#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -126,7 +130,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/DP/code413.java" />
         <option value="$PROJECT_DIR$/src/main/java/DP/code221.java" />
         <option value="$PROJECT_DIR$/src/main/java/DP/code516.java" />
         <option value="$PROJECT_DIR$/src/main/java/DP/code474.java" />
@@ -177,12 +180,13 @@
         <option value="$PROJECT_DIR$/src/main/java/Arrays/code347.java" />
         <option value="$PROJECT_DIR$/src/main/java/LinkedList/code143.java" />
         <option value="$PROJECT_DIR$/src/main/java/BinarySearch/code50.java" />
+        <option value="$PROJECT_DIR$/src/main/java/BinarySearch/code658.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1139" />
-    <option name="y" value="79" />
+    <option name="x" value="1119" />
+    <option name="y" value="55" />
     <option name="width" value="1363" />
     <option name="height" value="983" />
   </component>
@@ -191,6 +195,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -314,14 +319,13 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1568129072536" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1568214892448" />
     <property name="last_opened_file_path" value="G:/ali-flink-contest/hadoop/flink" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -451,17 +455,18 @@
       <workItem from="1567916045850" duration="4819000" />
       <workItem from="1568044410690" duration="577000" />
       <workItem from="1568125330648" duration="1262000" />
+      <workItem from="1568212959285" duration="1315000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="145160000" />
+    <option name="totallyTimeSpent" value="146475000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1139" y="79" width="1363" height="983" extended-state="0" />
+    <frame x="1119" y="55" width="1363" height="983" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.33077514" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.33614734" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -527,13 +532,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/DFS/code113.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-132">
-          <caret line="30" column="13" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/DFS/code109.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
@@ -883,6 +881,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/LinkedList/code143.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="30" column="8" selection-start-line="30" selection-start-column="8" selection-end-line="30" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/DFS/ListNode.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="54">
@@ -934,17 +939,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/LinkedList/code143.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/BinarySearch/code50.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="30" column="8" selection-start-line="30" selection-start-column="8" selection-end-line="30" selection-end-column="8" />
+        <state relative-caret-position="243">
+          <caret line="13" column="17" lean-forward="true" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/BinarySearch/code50.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/BinarySearch/code658.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+        <state>
+          <caret lean-forward="true" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#523#532#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
