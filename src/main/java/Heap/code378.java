@@ -87,9 +87,9 @@ public class code378 {
                     if (priorityQueue.peek() > matrix[i][j]){
                         priorityQueue.add(matrix[i][j]);
                         priorityQueue.poll();
-                    }else {
-                        priorityQueue.add(matrix[i][j]);
                     }
+                }else{
+                    priorityQueue.add(matrix[i][j]);
                 }
             }
         }
