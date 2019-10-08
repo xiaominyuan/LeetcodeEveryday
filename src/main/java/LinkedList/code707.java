@@ -48,7 +48,7 @@ public class code707 {
     public code707(){}
 
     public int get(int index){
-        if (index < = || index > size -1){
+        if (index <= 0 || index > size -1){
             return -1;
         }
 
