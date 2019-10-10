@@ -53,10 +53,12 @@ public class code287 {
                int tmp = nums[left];
                nums[left] = nums[right];
                nums[right] = tmp;
+           }else{
+               break;
            }
        }
 
-       nums[mid] = nums[right];
+       nums[low] = nums[right];
        nums[right] = mid;
 
        quickSort(nums, low, right-1);
