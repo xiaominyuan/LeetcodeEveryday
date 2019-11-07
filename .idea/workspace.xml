@@ -202,6 +202,7 @@
       <workItem from="1572271674492" duration="2362000" />
       <workItem from="1572448394998" duration="910000" />
       <workItem from="1572877028464" duration="999000" />
+      <workItem from="1573136115589" duration="4817000" />
     </task>
     <servers />
   </component>
@@ -220,5 +221,15 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/LinkedList/code2.java</url>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

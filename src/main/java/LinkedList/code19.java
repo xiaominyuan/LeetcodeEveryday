@@ -29,7 +29,7 @@ public class code19 {
         int count = len - n;
 
         first = tmp;
-        while (first != null){
+        while (count > 0){
             count--;
             first= first.next;
         }
