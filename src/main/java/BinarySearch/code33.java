@@ -36,7 +36,7 @@ public class code33 {
 
             if (nums[mid] < nums[right]){
                 //右边的数组是有序的
-                if (nums[mid] < target && nums[right] >= right){
+                if (nums[mid] < target && nums[right] >= target){
                     left = mid + 1;
                 }else{
                     right = mid - 1;

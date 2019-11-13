@@ -62,7 +62,7 @@ public class code153 {
                 return nums[mid+1];
             }
 
-            if (nums[mid-1] < nums[mid]){
+            if (nums[mid-1] > nums[mid]){
                 return nums[mid];
             }
 
