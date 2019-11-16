@@ -18,4 +18,19 @@ public class bubbleSort {
             }
         }
     }
+
+
 }
+
+class tt{
+    public static void main(String[] args) {
+        int[] a = new int[]{1,7,3,6,4};
+        bubbleSort b = new bubbleSort();
+        b.sort(a);
+        for (int e : a){
+            System.out.println(e);
+        }
+
+    }
+}
+
