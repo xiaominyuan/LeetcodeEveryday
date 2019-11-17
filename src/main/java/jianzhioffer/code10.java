@@ -1,6 +1,7 @@
 package jianzhioffer;
 
-import DFS.ListNode;
+
+import LinkedList.ListNode;
 
 public class code10 {
     public ListNode FindKthToTail(ListNode head, int k) {
