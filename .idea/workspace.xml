@@ -48,7 +48,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.tt">
+  <component name="RunManager" selected="Application.code16">
     <configuration name="Trys" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Trys" />
       <module name="leetcodeEveryday" />
@@ -62,6 +62,19 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="sort.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="code16" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="jianzhioffer.code16" />
+      <module name="leetcodeEveryday" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="jianzhioffer.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -97,6 +110,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.code16" />
         <item itemvalue="Application.tt" />
         <item itemvalue="Application.bubbleSort" />
         <item itemvalue="Application.try1" />
@@ -237,7 +251,7 @@
       <workItem from="1573741865538" duration="1157000" />
       <workItem from="1573904737136" duration="6498000" />
       <workItem from="1574085494169" duration="1218000" />
-      <workItem from="1574167925206" duration="609000" />
+      <workItem from="1574167925206" duration="2532000" />
     </task>
     <servers />
   </component>
