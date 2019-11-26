@@ -257,6 +257,7 @@
       <workItem from="1574514747707" duration="1729000" />
       <workItem from="1574579061724" duration="2484000" />
       <workItem from="1574690397763" duration="1913000" />
+      <workItem from="1574778705520" duration="869000" />
     </task>
     <servers />
   </component>
@@ -298,6 +299,10 @@
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/DFS/code1026.java</url>
           <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/jianzhioffer/code1.java</url>
+          <option name="timeStamp" value="6" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
