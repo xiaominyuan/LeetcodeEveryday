@@ -8,6 +8,8 @@ import DFS.TreeNode;
 
 import java.util.Stack;
 
+//二叉搜索树按照中序遍历就是从小到大打印
+
 public class code44 {
     public TreeNode KthNode(TreeNode pRoot, int k){
         if (pRoot == null || k == 0){
