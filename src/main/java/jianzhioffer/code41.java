@@ -22,7 +22,7 @@ public class code41 {
             TreeNode right = stack.pop();
             TreeNode left = stack.pop();
             if (left == null && right == null){
-                continue;;
+                continue;
             }
 
             if (left == null || right == null){
