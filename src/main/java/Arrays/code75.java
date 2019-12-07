@@ -33,12 +33,16 @@ public class code75 {
         while (cur <= p2){
             if (nums[cur] == 0){
                 int tmp = nums[cur];
-                nums[cur++] = nums[p0];
-                nums[p0++] = tmp;
+                nums[cur] = nums[p0];
+                nums[p0] = tmp;
+                cur++;
+                p0++;
             }else if (nums[cur] == 2){
                 int tmp = nums[cur];
                 nums[cur] = nums[p2];
-                nums[p2--] = tmp;
+                nums[p2] = tmp;
+
+                p2--;
             }else{
                 cur++;
             }
