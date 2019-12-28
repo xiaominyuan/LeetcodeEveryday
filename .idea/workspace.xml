@@ -74,7 +74,7 @@
       <module name="leetcodeEveryday" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="jianzhioffer.*" />
+          <option name="PATTERN" value="ershua.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -280,7 +280,8 @@
       <workItem from="1576932410705" duration="2923000" />
       <workItem from="1577019695982" duration="1292000" />
       <workItem from="1577110403632" duration="1740000" />
-      <workItem from="1577372162485" duration="1397000" />
+      <workItem from="1577372162485" duration="1559000" />
+      <workItem from="1577513284654" duration="5716000" />
     </task>
     <servers />
   </component>
