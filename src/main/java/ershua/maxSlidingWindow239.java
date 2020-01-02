@@ -27,6 +27,7 @@
 
 package ershua;
 
+import java.util.LinkedList;
 import java.util.Map;
 
 public class maxSlidingWindow239 {
@@ -43,6 +44,34 @@ public class maxSlidingWindow239 {
                 max = Math.max(max, nums[j]);
             }
             res[i] = max;
+        }
+
+        return res;
+    }
+
+    public int[] maxSlidingWindow2(int[] nums, int k) {
+        if (nums == n || nums.length == 0){
+            return new int[0];
+        }
+        int len = nums.length;
+        int[] res = new int[len-k+1];
+        LinkedList<Integer> list = new LinkedList<>();
+
+        int index = 0;
+        for (int i = 0; i<len; i++){
+            while (!list.isEmpty() && nums[list.peekLast()] < nums[i]){
+                list.pollLast();
+            }
+
+            list.add(i);
+
+            if (i - list.peek() >= k){
+                //首尾两个索引距离超过k，那么第一个索引就没有用了
+                list.poll();
+            }
+            if (i >= k-1){
+                res[index++] = nums[list.peek()];
+            }
         }
 
         return res;
