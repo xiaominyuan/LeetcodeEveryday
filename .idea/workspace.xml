@@ -395,6 +395,10 @@
           <url>file://$PROJECT_DIR$/src/main/java/jianzhioffer/code32.java</url>
           <option name="timeStamp" value="14" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/jianzhioffer/code2.java</url>
+          <option name="timeStamp" value="15" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
