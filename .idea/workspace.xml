@@ -34,17 +34,23 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="preferences.sourceCode" />
+    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="LinkedList" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.code16">
-    <configuration name="Trys" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Trys" />
-      <module name="leetcodeEveryday" />
+  <component name="RunManager" selected="Application.MinHeap">
+    <configuration name="MinHeap" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Heap.MinHeap" />
+      <module name="LeetcodeEveryday" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Heap.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -103,11 +109,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.MinHeap" />
         <item itemvalue="Application.code16" />
         <item itemvalue="Application.tt" />
         <item itemvalue="Application.bubbleSort" />
         <item itemvalue="Application.try1" />
-        <item itemvalue="Application.Trys" />
       </list>
     </recent_temporary>
   </component>
@@ -325,10 +331,10 @@
       <screen x="0" y="0" width="2560" height="1030" />
     </state>
     <state x="1006" y="207" key="FileChooserDialogImpl/0.0.2560.1030@0.0.2560.1030" timestamp="1582121352066" />
-    <state x="505" y="0" key="SettingsEditor" timestamp="1582202683406">
+    <state x="505" y="0" key="SettingsEditor" timestamp="1583332748074">
       <screen x="0" y="0" width="2048" height="824" />
     </state>
-    <state x="505" y="0" key="SettingsEditor/0.0.2048.824@0.0.2048.824" timestamp="1582202683406" />
+    <state x="505" y="0" key="SettingsEditor/0.0.2048.824@0.0.2048.824" timestamp="1583332748074" />
     <state x="631" y="0" key="SettingsEditor/0.0.2560.1030@0.0.2560.1030" timestamp="1582121354127" />
     <state x="703" y="234" key="com.intellij.ide.util.TipDialog" timestamp="1582201455103">
       <screen x="0" y="0" width="2048" height="824" />

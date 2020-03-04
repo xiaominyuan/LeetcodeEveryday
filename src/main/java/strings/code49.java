@@ -22,23 +22,23 @@ import java.util.*;
 //遍历数组。对每个元素进行排序，然后存在 map 中
 
 public class code49 {
-    public List<List<String>> groupAnagrams(String[] strs) {
-        if (strs.length == 0){
-            return new ArrayList<>();
-        }
-
-        Map<String, List> result = new HashMap<>();
-
-        for (String s : strs){
-            char[] c = s.toCharArray();
-            Arrays.sort(c);
-            String key = String.valueOf(c);
-            if (!result.containsKey(key)){
-                result.put(key, new ArrayList());
-            }
-            result.get(key).add(s);
-        }
-
-        return new ArrayList<>(result.values());
-    }
+//    public List<List<String>> groupAnagrams(String[] strs) {
+//        if (strs.length == 0){
+//            return new ArrayList<>();
+//        }
+//
+//        Map<String, List> result = new HashMap<>();
+//
+//        for (String s : strs){
+//            char[] c = s.toCharArray();
+//            Arrays.sort(c);
+//            String key = String.valueOf(c);
+//            if (!result.containsKey(key)){
+//                result.put(key, new ArrayList());
+//            }
+//            result.get(key).add(s);
+//        }
+//
+//        return new ArrayList<>(result.values());
+//    }
 }
