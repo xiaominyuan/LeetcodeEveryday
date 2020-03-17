@@ -17,6 +17,7 @@ public class getLeastNumbers40 {
         for (int i = 0; i< k; i++){
             res[i] = arr[i];
         }
+        build(res);
 
         for (int i = k; i< arr.length; i++){
             if (arr[i] < res[0]){

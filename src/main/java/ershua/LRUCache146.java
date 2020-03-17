@@ -65,6 +65,16 @@ public class LRUCache146 {
         this.size = capacity;
     }
 
+    public int get(int key){
+        if (!map.containsKey(key)){
+            return -1;
+        }
+
+        int val = map.get(key).val;
+        put(key, val);
+        return val;
+    }
+
     public void put(int key, int value){
         Node x = new Node(key, value);
         if (map.containsKey(key)){
