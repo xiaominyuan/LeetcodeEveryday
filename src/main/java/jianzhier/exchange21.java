@@ -33,7 +33,7 @@ public class exchange21 {
             }
 
             if(nums[end] % 2 == 0){
-                end++;
+                end--;
                 continue;
             }
 
