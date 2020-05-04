@@ -86,7 +86,7 @@
       <module name="leetcodeEveryday" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ershua.*" />
+          <option name="PATTERN" value="TwoPointers.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -352,10 +352,10 @@
     </state>
     <state x="505" y="0" key="SettingsEditor/0.0.2048.824@0.0.2048.824" timestamp="1583332748074" />
     <state x="631" y="0" key="SettingsEditor/0.0.2560.1030@0.0.2560.1030" timestamp="1582121354127" />
-    <state x="703" y="234" key="com.intellij.ide.util.TipDialog" timestamp="1588342155538">
+    <state x="703" y="234" key="com.intellij.ide.util.TipDialog" timestamp="1588485638943">
       <screen x="0" y="0" width="2048" height="824" />
     </state>
-    <state x="703" y="234" key="com.intellij.ide.util.TipDialog/0.0.2048.824@0.0.2048.824" timestamp="1588342155538" />
+    <state x="703" y="234" key="com.intellij.ide.util.TipDialog/0.0.2048.824@0.0.2048.824" timestamp="1588485638943" />
     <state x="879" y="293" key="com.intellij.ide.util.TipDialog/0.0.2560.1030@0.0.2560.1030" timestamp="1582121297564" />
     <state x="987" y="23" width="642" height="801" key="find.popup" timestamp="1586787904497">
       <screen x="0" y="0" width="2048" height="824" />
