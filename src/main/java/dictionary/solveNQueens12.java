@@ -48,7 +48,7 @@ public class solveNQueens12 {
     }
 
     public void dfs(char[][] board, int row, List<List<String>> res){
-        if (n == board.length){
+        if (row == board.length){
             List<String> tmp = new ArrayList<>();
             for (char[] chars : board){
                 tmp.add(String.valueOf(chars));
