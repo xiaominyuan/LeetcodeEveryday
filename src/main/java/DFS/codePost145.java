@@ -20,6 +20,7 @@ public class codePost145 {
                 cur = cur.left;
             }else{
                 cur = stack.pop();
+                //右节点为空或者右节点已经被访问过了
                 if (cur.right == null || cur.right == prior){
                     list.add(cur.val);
                     prior = cur;
@@ -27,8 +28,6 @@ public class codePost145 {
                 }else {
                     stack.push(cur);
                     cur = cur.right;
-                    stack.push(cur);
-                    cur = cur.left;
                 }
             }
         }
